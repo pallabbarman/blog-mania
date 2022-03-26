@@ -1,1 +1,1 @@
-# BlogMania Client
+# BlogMania

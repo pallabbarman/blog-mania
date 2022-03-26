@@ -1,0 +1,34 @@
+@use "../../../styling/" as *;
+
+.top-banner-container {
+    background-image: url("../../../images/TopBanner/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-container {
+    min-height: 680px;
+    h1 {
+        margin: 0;
+        font-size: toRem(50);
+        font-weight: 700;
+        margin-bottom: 20px;
+        @include md {
+            font-size: toRem(60);
+        }
+    }
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0.9;
+    @include md {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 25px;
+    }
+}
