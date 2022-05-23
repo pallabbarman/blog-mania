@@ -1,11 +1,12 @@
 @use "../../../styling/" as *;
 
 .navbar-container {
-    border: 1px solid gray;
+    padding: 1rem 0;
+    background-color: white;
 }
 
 #nav-logo {
-    font-size: toRem(35);
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -15,16 +16,22 @@
 
 .nav-items {
     gap: 10px;
+    font-size: 1.1rem;
+    align-items: flex-start;
 }
 
 .navbar-toggle {
     box-shadow: none !important;
 }
 
+.active-nav {
+    color: #ffc73f !important;
+}
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: black;
+    color: #ffc73f;
     cursor: pointer;
 }
 
@@ -33,10 +40,10 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 3.5px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: #ffc73f;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }

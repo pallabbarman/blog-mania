@@ -9,9 +9,7 @@ const TopBanner = () => (
                 <Col lg={7}>
                     <div className="banner-content ">
                         <p>Hello! Welcome To </p>
-                        <h1>
-                            Blog<span className="logo-color">Mania</span>
-                        </h1>
+                        <h1>BlogMania</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
                             laudantium est quas molestiae nihil, eligendi doloribus, enim error

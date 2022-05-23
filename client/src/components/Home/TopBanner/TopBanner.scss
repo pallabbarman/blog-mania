@@ -1,34 +1,28 @@
 @use "../../../styling/" as *;
 
 .top-banner-container {
-    background-image: url("../../../images/TopBanner/banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg, #f200ff 0%, #ffba42 100%);
 }
 
 .banner-container {
-    min-height: 680px;
+    max-height: 670px;
+    padding: 3rem 0.5rem;
     h1 {
         margin: 0;
-        font-size: toRem(50);
+        font-size: 10vw;
         font-weight: 700;
+        color: rgb(255 255 255);
         margin-bottom: 20px;
+    }
+    p {
+        color: rgb(255 255 255);
+        font-size: 0.9rem;
         @include md {
-            font-size: toRem(60);
+            font-size: 1.1rem;
         }
     }
-}
-
-.banner-content {
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    flex-wrap: wrap;
-    overflow: hidden;
-    border-radius: 20px;
-    padding: 20px;
-    opacity: 0.9;
-    @include md {
-        background: rgba(0, 0, 0, 0.7);
-        padding: 25px;
+    @include xxl {
+        height: 670px;
+        padding: 0;
     }
 }
