@@ -1,15 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home/Home';
 import NavBar from './components/Shared/NavBar/NavBar';
 
-function App() {
-    return (
-        <div>
-            <NavBar />
-            <Home />
-        </div>
-    );
-}
+const App = () => (
+    <Router>
+        <NavBar />
+        <Routes>
+            <Route index path="/" element={<Home />} />
+        </Routes>
+    </Router>
+);
 
 export default App;

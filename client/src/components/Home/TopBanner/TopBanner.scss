@@ -1,7 +1,7 @@
 @use "../../../styling/" as *;
 
 .top-banner-container {
-    background: linear-gradient(45deg, #f200ff 0%, #ffba42 100%);
+    background: $primary-color;
 }
 
 .banner-container {
@@ -9,10 +9,13 @@
     padding: 3rem 0.5rem;
     h1 {
         margin: 0;
-        font-size: 10vw;
+        font-size: 2rem;
         font-weight: 700;
         color: rgb(255 255 255);
         margin-bottom: 20px;
+        @include md {
+            font-size: 4rem;
+        }
     }
     p {
         color: rgb(255 255 255);
